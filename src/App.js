@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import Footer from './Component/Footer';
 import Header from './Component/Header';
-import Products from './Component/Products';
 import Message from './Component/Message';
 import Cart from './Component/Cart';
+import ProductsContainer from './containers/ProductsContainer';
 class App extends Component {
   render() {
     return (
@@ -12,7 +12,7 @@ class App extends Component {
         <Header />
         <main id="mainContainer">
             <div className="container">
-                <Products />
+                <ProductsContainer />
                 <Message />
                 <Cart />
             </div>
