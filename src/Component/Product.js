@@ -6,10 +6,10 @@ class Product extends Component {
   RenderRating  = (rating) => {
     var result = [];
     for( var i = 0 ; i < rating ; i++){
-        result.push(<i className="fa fa-star"></i>)
+        result.push(<i key={i} className="fa fa-star"></i>)
     }
     for( var j = 0 ; j < 5 - rating ; j++){
-      result.push(<i className="fa fa-star-o"></i>)
+      result.push(<i key={j + 'o'} className="fa fa-star-o"></i>)
     }
     return result;
   }
